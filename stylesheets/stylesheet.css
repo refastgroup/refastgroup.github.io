@@ -104,6 +104,17 @@ a {
   .project-tagline {
     font-size: 1rem; } }
 
+#pageWrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -57px; /* Size of the footer is removed here and pushed by .push */
+  min-width: 912px;
+  position: relative;
+  overflow: hidden;
+}
+
+
 .main-content :first-child {
   margin-top: 0; }
 .main-content img {
@@ -243,3 +254,8 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+    
+/* Push is the last element inside pageWrapper */
+.site-footer, .push{
+  height: 57px;
+}
