@@ -11,6 +11,12 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.0.0/css/jquery.mb.YTPlayer.min.css" media="screen">
     <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.0.0/jquery.mb.YTPlayer.min.js"></script>
+    <script>
+      $(function(){
+        $(".main-content").YTPlayer();
+      });
+    </script>
+    
   </head>
   <body>
     <section class="page-header">
@@ -18,7 +24,6 @@
       <h2 class="project-tagline">Responsible Fashion &amp; Style</h2>
     </section>
     <section class="main-content">
-      <div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/dQVrUuZs3X4',containment:'body',autoPlay:true, mute:true, startAt:11, opacity:1}">My video</div>
     </section>
     <section class="footer">
       <footer class="site-footer">
