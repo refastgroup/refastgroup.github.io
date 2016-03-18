@@ -14,7 +14,10 @@
     <script type="text/javascript">
       $(function () {
         $(".player").mb_YTPlayer();
-        $('.player').YTPApplyFilters('grayscale ', 50);
+        var filters = {
+            grayscale: 50
+        };
+        $('.player').YTPApplyFilters(filters);
       });
     </script>
     
